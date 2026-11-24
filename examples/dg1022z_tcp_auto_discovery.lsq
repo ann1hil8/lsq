@@ -1,0 +1,12 @@
+# Discovers a DG1022Z LAN VISA resource, extracts its host, then uses raw TCP.
+connection dg_tcp_auto type=tcp discovery=visa resource_prefix=TCPIP read_timeout=5s
+device dg1022 driver=dg1022z connection=dg_tcp_auto
+discover dg_tcp_auto
+open dg_tcp_auto
+
+device_call dg1022 identify save=idn
+print "IDN = ${idn}"
+device_call dg1022 get_frequency channel=1 save=frequency
+print "CH1 frequency = ${frequency} Hz"
+
+close dg_tcp_auto

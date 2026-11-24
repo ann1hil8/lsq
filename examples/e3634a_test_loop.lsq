@@ -1,0 +1,90 @@
+# E3634A communication, configuration, measurement, and recovery test.
+# Output is forced OFF. Voltage and current are written back to their
+# existing programmed values, so no operating point is changed.
+
+device e3634a driver=e3634a
+
+discover e3634a
+open e3634a
+
+function read_status
+    device_call e3634a get_voltage_range save=range
+    device_call e3634a get_voltage save=voltage
+    device_call e3634a get_current save=current
+    device_call e3634a get_measured_voltage save=measured_voltage
+    device_call e3634a get_measured_current save=measured_current
+    device_call e3634a get_output save=output
+    device_call e3634a get_ovp_state save=ovp_state
+    device_call e3634a get_ovp_level save=ovp_level
+    device_call e3634a get_ocp_state save=ocp_state
+    device_call e3634a get_ocp_level save=ocp_level
+    device_call e3634a get_mode save=mode
+
+    print "Range: ${range}"
+    print "Programmed voltage: ${voltage} V"
+    print "Programmed current: ${current} A"
+    print "Measured voltage: ${measured_voltage} V"
+    print "Measured current: ${measured_current} A"
+    print "Output: ${output}"
+    print "OVP: ${ovp_state}, level=${ovp_level} V"
+    print "OCP: ${ocp_state}, level=${ocp_level} A"
+    print "Operating mode: ${mode}"
+endfunction
+
+# Startup enters remote mode, clears status, and disables output.
+device_call e3634a startup save=idn
+print "IDN: ${idn}"
+
+if not contains(idn, E3634A)
+    fail "The connected instrument is not an E3634A: ${idn}"
+endif
+
+# Capture the existing programmed values.
+device_call e3634a get_voltage save=original_voltage
+device_call e3634a get_current save=original_current
+
+# Safety state.
+device_call e3634a set_output false
+device_call e3634a get_output save=output
+
+if contains(output, 1)
+    fail "E3634A output is still enabled: ${output}"
+endif
+
+print "Initial status"
+call read_status
+
+# Set the existing values back into the instrument and verify readback.
+# This exercises the write path without changing the programmed operating point.
+device_call e3634a set_voltage ${original_voltage}
+device_call e3634a get_voltage save=voltage_readback
+print "Voltage write/readback: ${voltage_readback} V"
+
+device_call e3634a set_current ${original_current}
+device_call e3634a get_current save=current_readback
+print "Current write/readback: ${current_readback} A"
+
+# Check the error queue after all commands.
+device_call e3634a get_errors save=errors
+print "Error queue: ${errors}"
+
+# Repeated measurement polling.
+repeat 3
+    print "Measurement pass"
+    device_call e3634a get_measured_voltage save=measured_voltage
+    device_call e3634a get_measured_current save=measured_current
+    device_call e3634a get_mode save=mode
+
+    print "Voltage: ${measured_voltage} V"
+    print "Current: ${measured_current} A"
+    print "Mode: ${mode}"
+
+    sleep 250ms
+endrepeat
+
+print "Final status"
+call read_status
+
+# Output remains disabled and the instrument is returned to local mode.
+device_call e3634a shutdown
+close e3634a

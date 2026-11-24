@@ -1,0 +1,41 @@
+# Non-destructive Tektronix MSO2024B USB-VISA test.
+
+device scope driver=mso2024b
+discover scope
+open scope
+
+device_call scope clear_status
+device_call scope identify save=idn
+print "IDN = ${idn}"
+
+device_call scope get_channel 1 save=ch1_enabled
+device_call scope get_channel_scale 1 save=ch1_scale
+device_call scope get_channel_coupling 1 save=ch1_coupling
+print "CH1 enabled = ${ch1_enabled}"
+print "CH1 scale = ${ch1_scale} V/div"
+print "CH1 coupling = ${ch1_coupling}"
+
+device_call scope get_acquisition_mode save=acq_mode
+device_call scope get_acquisition_state save=acq_state
+device_call scope get_horizontal_scale save=time_scale
+device_call scope get_trigger_source save=trigger_source
+device_call scope get_trigger_state save=trigger_state
+print "Acquisition mode = ${acq_mode}"
+print "Acquisition state = ${acq_state}"
+print "Time scale = ${time_scale} s/div"
+print "Trigger source = ${trigger_source}"
+print "Trigger state = ${trigger_state}"
+
+device_call scope set_immediate_measurement frequency CH1
+device_call scope get_immediate_measurement save=measurement
+print "CH1 frequency = ${measurement} Hz"
+
+device_call scope configure_waveform CH1 1 1000 RIB 1
+device_call scope get_waveform save=waveform
+device_call scope get_waveform_summary CH1 1 1000 RIB 1 save=waveform_summary
+print "Waveform = ${waveform_summary}"
+save waveform file="waveforms/ch1_waveform.csv" format=csv
+save waveform file="waveforms/ch1_waveform.json" format=json
+device_call scope save_screenshot file="screenshots/scope.png"
+
+close scope

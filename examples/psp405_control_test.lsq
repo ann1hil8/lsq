@@ -1,0 +1,21 @@
+device psp405 driver=psp405
+
+discover psp405
+open psp405
+
+device_call psp405 get_voltage save=before
+print "Before: ${before}"
+
+device_call psp405 set_voltage 5.00
+device_call psp405 get_voltage save=after_voltage
+print "After voltage setting: ${after_voltage}"
+
+device_call psp405 set_current_limit 1.00
+device_call psp405 get_current_limit save=current_limit
+print "Current limit: ${current_limit}"
+
+device_call psp405 set_power_limit 17
+device_call psp405 get_power_limit save=power_limit
+print "Power limit: ${power_limit}"
+
+close psp405

@@ -1,0 +1,7 @@
+# Generic raw serial diagnostic. Replace COMx and the serial settings for the target device.
+connection serial type=serial port=COMx baud=9600 data_bits=8 parity=none stop_bits=1 read_timeout=2s
+open serial
+send serial "L" terminate=cr
+expect serial ends=crlf save=response
+print "raw response: ${response}"
+close serial

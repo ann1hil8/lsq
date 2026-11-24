@@ -1,0 +1,23 @@
+# Verifies raw TCP control, releases the TCP session, then controls the same
+# DG1022Z through USB VISA. Do not run while another application owns either interface.
+connection dg_tcp type=tcp host=10.0.0.14 read_timeout=5s
+device dg_tcp_device driver=dg1022z connection=dg_tcp
+discover dg_tcp
+open dg_tcp
+
+device_call dg_tcp_device identify save=tcp_idn
+print "TCP IDN = ${tcp_idn}"
+device_call dg_tcp_device get_frequency channel=1 save=tcp_frequency
+print "TCP CH1 frequency = ${tcp_frequency} Hz"
+close dg_tcp
+
+connection dg_usb type=visa resource_prefix=USB read_timeout=5s
+device dg_usb_device driver=dg1022z connection=dg_usb
+discover dg_usb
+open dg_usb
+
+device_call dg_usb_device identify save=usb_idn
+print "USB IDN = ${usb_idn}"
+device_call dg_usb_device get_frequency channel=1 save=usb_frequency
+print "USB CH1 frequency = ${usb_frequency} Hz"
+close dg_usb

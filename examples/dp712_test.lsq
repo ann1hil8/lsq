@@ -1,0 +1,38 @@
+# Non-destructive RIGOL DP712 RS-232 test.
+# The driver uses 9600 baud, 8-N-1, no flow control, and LF termination.
+
+device dp712 driver=dp712
+discover dp712
+open dp712
+
+device_call dp712 startup
+device_call dp712 identify save=idn
+print "IDN = ${idn}"
+
+# Drain errors left by earlier manual or script commands before this test.
+device_call dp712 get_errors save=preexisting_errors
+print "Pre-existing errors = ${preexisting_errors}"
+
+device_call dp712 get_voltage save=voltage
+device_call dp712 get_current save=current
+device_call dp712 get_output save=output
+device_call dp712 get_mode save=mode
+device_call dp712 get_measurements save=measurements
+print "Programmed voltage = ${voltage} V"
+print "Programmed current = ${current} A"
+print "Output = ${output}"
+print "Mode = ${mode}"
+print "Measurements = ${measurements}"
+
+device_call dp712 get_ovp save=ovp
+device_call dp712 get_ovp_level save=ovp_level
+device_call dp712 get_ocp save=ocp
+device_call dp712 get_ocp_level save=ocp_level
+print "OVP = ${ovp}, level = ${ovp_level} V"
+print "OCP = ${ocp}, level = ${ocp_level} A"
+
+device_call dp712 get_errors save=errors
+print "Errors = ${errors}"
+
+device_call dp712 shutdown
+close dp712

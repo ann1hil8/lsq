@@ -1,0 +1,12 @@
+# Direct raw-TCP DG1022Z test.
+connection dg_tcp type=tcp host=10.0.0.14 read_timeout=5s
+device dg1022 driver=dg1022z connection=dg_tcp
+discover dg_tcp
+open dg_tcp
+
+device_call dg1022 identify save=idn
+print "IDN = ${idn}"
+device_call dg1022 get_frequency channel=1 save=frequency
+print "CH1 frequency = ${frequency} Hz"
+
+close dg_tcp

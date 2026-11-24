@@ -1,0 +1,33 @@
+# Non-destructive E3634A RS-232 startup and readback test.
+# The driver supplies 9600 baud, 8 data bits, no parity, 2 stop bits, and DTR/DSR.
+
+device e3634a driver=e3634a
+discover e3634a
+open e3634a
+
+device_call e3634a startup save=idn
+print "IDN = ${idn}"
+
+device_call e3634a get_voltage_range save=range
+print "Range = ${range}"
+
+device_call e3634a get_voltage save=voltage
+print "Programmed voltage = ${voltage} V"
+
+device_call e3634a get_current save=current
+print "Programmed current = ${current} A"
+
+device_call e3634a get_measured_voltage save=measured_voltage
+print "Measured voltage = ${measured_voltage} V"
+
+device_call e3634a get_measured_current save=measured_current
+print "Measured current = ${measured_current} A"
+
+device_call e3634a get_output save=output
+print "Output = ${output}"
+
+device_call e3634a get_errors save=errors
+print "Errors = ${errors}"
+
+device_call e3634a shutdown
+close e3634a

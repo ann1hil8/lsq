@@ -1,0 +1,61 @@
+# Non-destructive PSP-405 command enumeration.
+# Discovery uses the cached port first, then identifies the PSP-405 with L\r.
+# The PSP-405 requires 2400 baud, 8-N-1, no flow control, and CR commands.
+
+device psp405 driver=psp405
+discover psp405
+open psp405
+
+# L: complete status
+device_call psp405 get_status save=L_response
+print "L = ${L_response}"
+
+# V: output voltage
+device_call psp405 get_voltage save=V_response
+print "V = ${V_response}"
+
+# A: output current
+device_call psp405 get_current save=A_response
+print "A = ${A_response}"
+
+# W: output power
+device_call psp405 get_power save=W_response
+print "W = ${W_response}"
+
+# U: voltage limit
+device_call psp405 get_voltage_limit save=U_response
+print "U = ${U_response}"
+
+# I: current limit
+device_call psp405 get_current_limit save=I_response
+print "I = ${I_response}"
+
+# P: power limit
+device_call psp405 get_power_limit save=P_response
+print "P = ${P_response}"
+
+# F: status flags
+device_call psp405 get_flags save=F_response
+print "F = ${F_response}"
+
+close psp405
+
+# Intentionally not executed:
+# SV xx.xx  Set output voltage
+# SU xx     Set voltage limit
+# SI x.xx   Set current limit
+# SP xxx    Set power limit
+# SV+ / SV- Adjust voltage
+# SU+ / SU- Adjust voltage limit
+# SI+ / SI- Adjust current limit
+# SP+ / SP- Adjust power limit
+# SUM       Set voltage limit to maximum
+# SIM       Set current limit to maximum
+# SPM       Set power limit to maximum
+# KF / KN   Set fine/coarse step mode
+# KO        Toggle output
+# KOE       Turn output on
+# KOD       Turn output off
+# SB+ / SB- Adjust positive offset
+# SD+ / SD- Adjust negative offset
+# EEP       Save settings to nonvolatile memory

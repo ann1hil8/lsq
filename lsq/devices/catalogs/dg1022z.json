@@ -1,0 +1,2112 @@
+{
+  "model": "Rigol DG1022Z / DG1000Z command set",
+  "transport": "USB VISA",
+  "source": "DG1000Z_ProgrammingGuide_EN.pdf",
+  "command_count": 263,
+  "commands": [
+    {
+      "command": ":COUNter:AUTO",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:COUPling",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:GATEtime",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:HF",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:LEVEl",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:MEASure?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:SENSitive",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:STATIstics:CLEAr",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:STATIstics:DISPlay",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUNter:STATIstics[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:AMPL:DEViation",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:AMPL:MODE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:AMPL:RATio",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:AMPL[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:FREQuency:DEViation",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:FREQuency:MODE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:FREQuency:RATio",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:FREQuency[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:PHASe:DEViation",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:PHASe:MODE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:PHASe:RATio",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling:PHASe[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":COUPling[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:BRIGhtness",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:CONTrast",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:DATA?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:MODE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:SAVer:IMMediate",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:SAVer[:STATe]",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:TEXT?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:TEXT:CLEar",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":DISPlay:TEXT[:SET]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":HCOPy:SDUMp:DATA?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":HCOPy:SDUMp:DATA:FORMat",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*CLS",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*ESE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*ESR?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*IDN?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*OPC",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*OPT?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*PSC",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*RCL",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*RST",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*SAV",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*SRE",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*STB?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*TRG",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "*WAI",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LICense:INSTall",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:IDENtify[:STATE]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:MDNS:ENABle",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:MDNS:HNAMe",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:MDNS:SNAMe:DESired",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:MDNS:SNAMe[:RESolved]?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:RESet",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":LXI:RESTart",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:NSTates?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:CATalog?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:DELete",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:LOCK",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:NAME",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:RECall:AUTO",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MEMory:STATe:VALid?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:CATalog[:ALL]?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:CATalog:DATA:ARBitrary?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:CATalog:STATe?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:CDIRectory",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:COPY",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:DELete",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:LOAD[:ALL]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:LOAD:DATA",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:LOAD:STATe",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:MDIRectory",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:RDIRectory?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:RDIRectory",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:STORe[:ALL]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:STORe:DATA",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":MMEMory:STORe:STATe",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:GATe:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:IMPedance",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:LOAD",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:MODE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>][:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:SYNC:DELay",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:SYNC:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":OUTPut[<n>]:SYNC[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA:GAIN",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA:OFFSet[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA:OFFSet:VALUe",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA:OUTPut:POLarity",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA:SAVE",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":PA[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":ROSCillator:SOURce",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":ROSCillator:SOURce:CURRent?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:ARBitrary",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:DC",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:HARMonic",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:NOISe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:PULSe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:RAMP",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:SINusoid",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:SQUare",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:TRIangle",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:APPLy:USER",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:GATE:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:INTernal:PERiod",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:MODE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:NCYCles",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:PHASe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:TDELay",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:TRIGger[:IMMediate]",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:TRIGger:SLOPe",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:TRIGger:SOURce",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:BURSt:TRIGger:TRIGOut",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:CENTer",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:COUPle:MODE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:COUPle:OFFSet",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:COUPle:RATio",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:COUPle[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency[:FIXed]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:SPAN",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:STARt",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FREQuency:STOP",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:ARBitrary:MODE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:ARBitrary:SRATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:DCYCle",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:HOLD",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:PERiod",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:TRANsition[:BOTH]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:TRANsition:LEADing",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:TRANsition:TRAiling",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:PULSe:WIDTh",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:RAMP:SYMMetry",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion[:SHAPe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:SQUare:DCYCle",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:FUNCtion:SQUare:PERiod",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic:AMPL",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic:ORDEr",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic:PHASe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic:TYPe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:HARMonic:USER",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:MARKer:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:MARKer[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM[:DEPTh]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM:DSSC",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM:INTernal:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM:INTernal:FUNCtion",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:AM:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:ASKey:AMPLitude",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:ASKey:INTernal[:RATE]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:ASKey:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:ASKey:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:ASKey:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FM[:DEViation]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FM:INTernal:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FM:INTernal:FUNCtion",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FM:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FM:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FSKey[:FREQuency]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FSKey:INTernal:RATE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FSKey:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FSKey:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:FSKey:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PM[:DEViation]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PM:INTernal:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PM:INTernal:FUNCtion",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PM:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PM:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PSKey:INTernal:RATE",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PSKey:PHASe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PSKey:POLarity",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PSKey:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PSKey:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM[:DEViation]:DCYCle",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM[:DEViation][:WIDTh]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM:INTernal:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM:INTernal:FUNCtion",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM:SOURce",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:MOD]:PWM:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:MOD[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:MOD:TYPe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PERiod[:FIXed]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PHASe[:ADJust]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PHASe:INITiate",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PHASe:SYNChronize",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PULSe:DCYCle",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PULSe:HOLD",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PULSe:TRANsition[:LEADing]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PULSe:TRANsition:TRAiling",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:PULSe:WIDTh",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SUM:AMPLitude",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SUM:INTernal:FREQuency",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function-dependent frequency range; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SUM:INTernal:FUNCtion",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SUM[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:HTIMe:STARt",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:HTIMe[:STOP]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:RTIMe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:SPACing",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:STATe",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:STEP",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:TIME",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:TRIGger[:IMMediate]",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:TRIGger:SLOPe",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:TRIGger:SOURce",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:SWEep:TRIGger:TRIGOut",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:CATalog?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:COPY",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:DAC16",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "DAC values are instrument-defined integer samples",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:DAC",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "DAC values are instrument-defined integer samples",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA[:DATA]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:DELete[:NAME]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:LOAD",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:LOCK[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:POINts",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]][:TRACe]:DATA:VALue",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:TRACK",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage:COUPle[:STATe]",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage[:LEVel][:IMMediate][:AMPLitude]",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage[:LEVel][:IMMediate]:HIGH",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage[:LEVel][:IMMediate]:LOW",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage[:LEVel][:IMMediate]:OFFSet",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage:RANGe:AUTO",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": "[:SOURce[<n>]]:VOLTage:UNIT",
+      "access": "set/get",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Function- and load-dependent; use MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:BEEPer[:IMMediate]",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:BEEPer:STATe",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:CHANnel:CURrent",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:CHANnel:NUMber?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:GPIB[:SELF]:ADDRess",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:APPLy",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:AUTOip[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:CONTrol?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:DHCP[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:DNS",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:DOMain",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:GATEway",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:HOSTname",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:IPADdress",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:MAC?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:SMASk",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:STATic[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:LAN:UPDate",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:USB:INFormation?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:COMMunicate:USB[:SELF]:CLASs",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:CSCopy",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:ERRor?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:KLOCk[:STATe]",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:LANGuage",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:POWeron",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:PRESet",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:ROSCillator:SOURce",
+      "access": "set/get",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:SECurity:IMMediate",
+      "access": "set",
+      "parameters": "Command parameters as specified in the programming guide",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":SYSTem:VERSion?",
+      "access": "get",
+      "parameters": "Optional query argument where specified",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":TRIGger[<n>]:DELay",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":TRIGger[<n>][:IMMediate]",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":TRIGger[<n>]:SLOPe",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    },
+    {
+      "command": ":TRIGger[<n>]:SOURce",
+      "access": "set",
+      "parameters": "Channel n=1 or 2 plus command parameters",
+      "limits": "Instrument-defined; MINimum/MAXimum where supported",
+      "errors": "Instrument errors are read with :SYSTem:ERRor?",
+      "description": "DG1000Z command documented in the programming guide."
+    }
+  ]
+}

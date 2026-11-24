@@ -1,0 +1,3848 @@
+{
+  "model": "Tektronix MSO2024B",
+  "transport": "USB VISA",
+  "source": "0770738_1.txt",
+  "command_count": 640,
+  "commands": [
+    {
+      "command": "*CAL?",
+      "syntax": "*CAL?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*CLS",
+      "syntax": "*CLS",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*DDT",
+      "syntax": "*DDT {<Block>|<QString>} *DDT?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*ESE",
+      "syntax": "*ESE <NR1> *ESE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*ESR?",
+      "syntax": "*ESR?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*IDN?",
+      "syntax": "*IDN?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*LRN?",
+      "syntax": "*LRN?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*OPC",
+      "syntax": "*OPC *OPC?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*PSC",
+      "syntax": "*PSC {OFF|ON|NR1>} *PSC?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*PUD",
+      "syntax": "*PUD {<Block>|<QString>} *PUD?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*RCL",
+      "syntax": "*RCL <NR1>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*RST",
+      "syntax": "*RST",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*SAV",
+      "syntax": "*SAV <NR1>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*SRE",
+      "syntax": "*SRE <NR1> *SRE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*STB?",
+      "syntax": "*STB?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*TRG",
+      "syntax": "*TRG",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*TST?",
+      "syntax": "*TST?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "*WAI",
+      "syntax": "*WAI",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:MAXSamplerate?",
+      "syntax": "ACQuire:MAXSamplerate?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:MODe",
+      "syntax": "ACQuire:MODe {SAMple|AVErage} ACQuire:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:NUMACq?",
+      "syntax": "ACQuire:NUMACq?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:NUMAVg",
+      "syntax": "ACQuire:NUMAVg <NR1> ACQuire:NUMAVg?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:STATE",
+      "syntax": "ACQuire:STATE {OFF|ON|RUN|STOP|<NR1>} ACQuire:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire:STOPAfter",
+      "syntax": "ACQuire:STOPAfter {RUNSTop|SEQuence} ACQuire:STOPAfter?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ACQuire?",
+      "syntax": "ACQuire?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas",
+      "syntax": "ALIas {OFF|ON|<NR1>} ALIas?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas:CATalog?",
+      "syntax": "ALIas:CATalog?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas:DEFine",
+      "syntax": "ALIas:DEFine <QString><,>{<QString>|<Block>} ALIas:DEFine? <QString>",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas:DELEte",
+      "syntax": "ALIas:DELEte <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas:DELEte:ALL",
+      "syntax": "ALIas:DELEte:ALL",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas:DELEte[:NAMe]",
+      "syntax": "ALIas:DELEte[:NAMe] <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALIas[:STATE]",
+      "syntax": "ALIas[:STATE] {<NR1>|OFF|ON} ALIas[:STATE]?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ALLEv?",
+      "syntax": "ALLEv?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUTOSet",
+      "syntax": "AUTOSet {EXECute|UNDo}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUTOSet:ENAble",
+      "syntax": "AUTOSet:ENAble {OFF|ON} AUTOSet:ENAble?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe",
+      "syntax": "AUXin:PRObe AUXin:PRObe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:AUTOZero",
+      "syntax": "AUXin:PRObe:AUTOZero {EXECute}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:COMMAND",
+      "syntax": "AUXin:PRObe:COMMAND <QString>, <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:DEGAUss",
+      "syntax": "AUXin:PRObe:DEGAUss {EXECute}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:DEGAUss:STATE?",
+      "syntax": "AUXin:PRObe:DEGAUss:STATE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:FORCEDRange",
+      "syntax": "AUXin:PRObe:FORCEDRange <NR3> AUXin:PRObe:FORCEDRange?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:GAIN",
+      "syntax": "AUXin:PRObe:GAIN <NR3> AUXin:PRObe:GAIN?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:ID:SERnumber?",
+      "syntax": "AUXin:PRObe:ID:SERnumber?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:ID:TYPE?",
+      "syntax": "AUXin:PRObe:ID:TYPE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:RESistance?",
+      "syntax": "AUXin:PRObe:RESistance?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:SIGnal",
+      "syntax": "AUXin:PRObe:SIGnal {BYPass|PASS} AUXin:PRObe:SIGnal?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin:PRObe:UNIts?",
+      "syntax": "AUXin:PRObe:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "AUXin?",
+      "syntax": "AUXin?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS",
+      "syntax": "BUS",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:CAN:BITRate",
+      "syntax": "BUS:B<x>:CAN:BITRate <NR1> BUS:B<x>:CAN:BITRate?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:CAN:PRObe",
+      "syntax": "BUS:B<x>:CAN:PRObe {CANH|CANL|RX|TX|DIFFerential} BUS:B<x>:CAN:PRObe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:CAN:SAMPLEpoint",
+      "syntax": "BUS:B<x>:CAN:SAMPLEpoint <NR1> BUS:B<x>:CAN:SAMPLEpoint?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:CAN:SOUrce",
+      "syntax": "BUS:B<x>:CAN:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:CAN:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:DISplay:FORMAt",
+      "syntax": "BUS:B<x>:DISplay:FORMAt {BINary|HEXadecimal|ASCII|MIXed} BUS:B<x>:DISplay:FORMAt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:I2C:ADDRess:RWINClude",
+      "syntax": "BUS:B<x>:I2C:ADDRess:RWINClude {<NR1>|OFF|ON} BUS:B<x>:I2C:ADDRess:RWINClude?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:I2C{:CLOCK|:SCLK}:SOUrce",
+      "syntax": "BUS:B<x>:I2C{:CLOCK|:SCLK}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:I2C{:CLOCK|:SCLK}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:I2C{:DATA|:SDATA}:SOUrce",
+      "syntax": "BUS:B<x>:I2C{:DATA|:SDATA}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:I2C{:DATA|:SDATA}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LABel",
+      "syntax": "BUS:B<x>:LABel <Qstring> BUS:B<x>:LABel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:BITRate",
+      "syntax": "BUS:B<x>:LIN:BITRate <NR1> BUS:B<x>:LIN:BITRate?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:IDFORmat",
+      "syntax": "BUS:B<x>:LIN:IDFORmat {NOPARity|PARity} BUS:B<x>:LIN:IDFORmat?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:POLARity",
+      "syntax": "BUS:B<x>:LIN:POLARity {NORMal|INVerted} BUS:B<x>:LIN:POLARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:SAMPLEpoint",
+      "syntax": "BUS:B<x>:LIN:SAMPLEpoint <NR1> BUS:B<x>:LIN:SAMPLEpoint?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:SOUrce",
+      "syntax": "BUS:B<x>:LIN:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:LIN:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:LIN:STANDard",
+      "syntax": "BUS:B<x>:LIN:STANDard {V1X|V2X|MIXed} BUS:B<x>:LIN:STANDard?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:PARallel:BIT<x>:SOUrce",
+      "syntax": "BUS:B<x>:PARallel:BIT<x>:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:PARallel:BIT<x>:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:PARallel:CLOCK:EDGE",
+      "syntax": "BUS:B<x>:PARallel:CLOCK:EDGE {EITher|RISing|FALling} BUS:B<x>:PARallel:CLOCK:EDGE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:PARallel:CLOCK:ISCLOCKed",
+      "syntax": "BUS:B<x>:PARallel:CLOCK:ISCLOCKed {YES|NO} BUS:B<x>:PARallel:CLOCK:ISCLOCKed?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:PARallel:CLOCK:SOUrce",
+      "syntax": "BUS:B<x>:PARallel:CLOCK:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:PARallel:CLOCK:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:PARallel:WIDth",
+      "syntax": "BUS:B<x>:PARallel:WIDth <NR1> BUS:B<x>:PARallel:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:POSition",
+      "syntax": "BUS:B<x>:POSition <NR3> BUS:B<x>:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:BITRate",
+      "syntax": "BUS:B<x>:RS232C:BITRate <NR1> BUS:B<x>:RS232C:BITRate?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:DATABits",
+      "syntax": "BUS:B<x>:RS232C:DATABits {7|8|9} BUS:B<x>:RS232C:DATABits?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:DELIMiter",
+      "syntax": "BUS:B<x>:RS232C:DELIMiter {NULl|LF|CR|SPace|XFF} BUS:B<x>:RS232C:DELIMiter?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:DISplaymode",
+      "syntax": "BUS:B<x>:RS232C:DISplaymode {FRAme|PACKET} BUS:B<x>:RS232C:DISplaymode?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:PARity",
+      "syntax": "BUS:B<x>:RS232C:PARity {NONe|EVEN|ODD} BUS:B<x>:RS232C:PARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:POLarity",
+      "syntax": "BUS:B<x>:RS232C:POLarity {NORMal|INVERTed} BUS:B<x>:RS232C:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:RX:SOUrce",
+      "syntax": "BUS:B<x>:RS232C:RX:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:RS232C:RX:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:RS232C:TX:SOUrce",
+      "syntax": "BUS:B<x>:RS232C:TX:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:RS232C:TX:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:BITOrder",
+      "syntax": "BUS:B<x>:SPI:BITOrder {LSB|MSB} BUS:B<x>:SPI:BITOrder?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:DATA:SIZe",
+      "syntax": "BUS:B<x>:SPI:DATA:SIZe <NR1> BUS:B<x>:SPI:DATA:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:DATA{:IN|:MISO}:POLARity",
+      "syntax": "BUS:B<x>:SPI:DATA{:IN|:MISO}:POLARity {LOW|HIGH} BUS:B<x>:SPI:DATA{:IN|:MISO}:POLARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:DATA{:IN|:MISO}:SOUrce",
+      "syntax": "BUS:B<x>:SPI:DATA{:IN|:MISO}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:SPI:DATA{:IN|:MISO}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:DATA{:OUT|:MOSI}:POLARity",
+      "syntax": "BUS:B<x>:SPI:DATA{:OUT|:MOSI}:POLARity {LOW|HIGH} BUS:B<x>:SPI:DATA{:OUT|:MOSI}:POLARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:DATA{:OUT|:MOSI}:SOUrce",
+      "syntax": "BUS:B<x>:SPI:DATA{:OUT|:MOSI}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:SPI:DATA{:OUT|:MOSI}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:FRAMING",
+      "syntax": "BUS:B<x>:SPI:FRAMING {SS|IDLEtime} BUS:B<x>:SPI:FRAMING?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI:IDLETime",
+      "syntax": "BUS:B<x>:SPI:IDLETime <NR3> BUS:B<x>:SPI:IDLETime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI{:CLOCK|:SCLK}:POLARity",
+      "syntax": "BUS:B<x>:SPI{:CLOCK|:SCLK}:POLARity {FALL|RISe} BUS:B<x>:SPI{:CLOCK|:SCLK}:POLARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI{:CLOCK|:SCLK}:SOUrce",
+      "syntax": "BUS:B<x>:SPI{:CLOCK|:SCLK}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:SPI{:CLOCK|:SCLK}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI{:SELect|:SS}:POLARity",
+      "syntax": "BUS:B<x>:SPI{:SELect|:SS}:POLARity {LOW|HIGH} BUS:B<x>:SPI{:SELect|:SS}:POLARity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:SPI{:SELect|:SS}:SOUrce",
+      "syntax": "BUS:B<x>:SPI{:SELect|:SS}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} BUS:B<x>:SPI{:SELect|:SS}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:STATE",
+      "syntax": "BUS:B<x>:STATE {<NR1>|OFF|ON} BUS:B<x>:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:B<x>:TYPE",
+      "syntax": "BUS:B<x>:TYPE {I2C|SPI|CAN|RS232C|PARallel|LIN} BUS:B<x>:TYPE",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:LOWerthreshold:CH<x>",
+      "syntax": "BUS:LOWerthreshold:CH<x> {<NR3>|ECL|TTL} BUS:LOWerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:THReshold:CH<x>",
+      "syntax": "BUS:THReshold:CH<x> {ECL|TTL|<NR3>} BUS:THReshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:THReshold:D<x>",
+      "syntax": "BUS:THReshold:D<x> {<NR3>|ECL|TTL} BUS:THReshold:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUS:UPPerthreshold:CH<x>",
+      "syntax": "BUS:UPPerthreshold:CH<x> {<NR3>|ECL|TTL} BUS:UPPerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "BUSY?",
+      "syntax": "BUSY?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:FACtory",
+      "syntax": "CALibrate:FACtory {STARt|CONTinue|PREVious|ABOrt|DUmp}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:FACtory:STATus?",
+      "syntax": "CALibrate:FACtory:STATus?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:INTERNal",
+      "syntax": "CALibrate:INTERNal",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:INTERNal:STARt",
+      "syntax": "CALibrate:INTERNal:STARt",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:INTERNal:STATus?",
+      "syntax": "CALibrate:INTERNal:STATus?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:RESults:FACtory?",
+      "syntax": "CALibrate:RESults:FACtory?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:RESults:SPC?",
+      "syntax": "CALibrate:RESults:SPC?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:RESults?",
+      "syntax": "CALibrate:RESults?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CALibrate:TEMPerature?",
+      "syntax": "CALibrate:TEMPerature?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:BANdwidth",
+      "syntax": "CH<x>:BANdwidth {TWEnty|FULl|<NR3>} CH<x>:BANdwidth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:COUPling",
+      "syntax": "CH<x>:COUPling {AC|DC|GND} CH<x>:COUPling?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:DESKew",
+      "syntax": "CH<x>:DESKew <NR3> CH<x>:DESKew?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:IMPedance",
+      "syntax": "CH<x>:IMPedance CH<x>:IMPedance?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:INVert",
+      "syntax": "CH<x>:INVert {ON|OFF} CH<x>:INVert?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:LABel",
+      "syntax": "CH<x>:LABel <Qstring> CH<x>:LABel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:OFFSet",
+      "syntax": "CH<x>:OFFSet <NR3> CH<x>:OFFSet?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:POSition",
+      "syntax": "CH<x>:POSition <NR3> CH<x>:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:AUTOZero",
+      "syntax": "CH<x>:PRObe:AUTOZero EXECute",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:COMMAND",
+      "syntax": "CH<x>:PRObe:COMMAND <QString>, <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:DEGAUss",
+      "syntax": "CH<x>:PRObe:DEGAUss EXECute",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:DEGAUss:STATE?",
+      "syntax": "CH<x>:PRObe:DEGAUss:STATE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:FORCEDRange",
+      "syntax": "CH<x>:PRObe:FORCEDRange <NR3> CH<x>:PRObe:FORCEDRange?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:GAIN",
+      "syntax": "CH<x>:PRObe:GAIN <NR3> CH<x>:PRObe:GAIN?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:ID:SERnumber?",
+      "syntax": "CH<x>:PRObe:ID:SERnumber?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:ID:TYPE?",
+      "syntax": "CH<x>:PRObe:ID:TYPE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:ID?",
+      "syntax": "CH<x>:PRObe:ID?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:RESistance?",
+      "syntax": "CH<x>:PRObe:RESistance?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:SIGnal",
+      "syntax": "CH<x>:PRObe:SIGnal {BYPass|PASS} CH<x>:PRObe:SIGnal?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe:UNIts?",
+      "syntax": "CH<x>:PRObe:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:PRObe?",
+      "syntax": "CH<x>:PRObe?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:SCAle",
+      "syntax": "CH<x>:SCAle <NR3> CH<x>:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:TERmination",
+      "syntax": "CH<x>:TERmination CH<x>:TERmination?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:VOLts",
+      "syntax": "CH<x>:VOLts <NR3> CH<x>:VOLts?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>:YUNits",
+      "syntax": "CH<x>:YUNits <QString> CH<x>:YUNits?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CH<x>?",
+      "syntax": "CH<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CLEARMenu",
+      "syntax": "CLEARMenu",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:FUNCtion",
+      "syntax": "CURSor:FUNCtion {OFF|SCREEN|WAVEform|VBArs|HBArs} CURSor:FUNCtion?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:HBArs:DELTa?",
+      "syntax": "CURSor:HBArs:DELTa?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:HBArs:POSITION<x>",
+      "syntax": "CURSor:HBArs:POSITION<x> <NR3> CURSor:HBArs:POSITION<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:HBArs:UNIts",
+      "syntax": "CURSor:HBArs:UNIts {BASe|PERcent} CURSor:HBArs:UNIts?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:HBArs:USE",
+      "syntax": "CURSor:HBArs:USE {CURrent|HALFgrat|FIVEdivs}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:HBArs?",
+      "syntax": "CURSor:HBArs?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:MODe",
+      "syntax": "CURSor:MODe {TRACk|INDependent} CURSor:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:ALTERNATE<x>?",
+      "syntax": "CURSor:VBArs:ALTERNATE<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:DELTa?",
+      "syntax": "CURSor:VBArs:DELTa?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:HPOS<x>?",
+      "syntax": "CURSor:VBArs:HPOS<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:POSITION<x>",
+      "syntax": "CURSor:VBArs:POSITION<x> <NR3> CURSor:VBArs:POSITION<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:UNIts",
+      "syntax": "CURSor:VBArs:UNIts {SEConds|HERtz|DEGrees|PERcent} CURSor:VBArs:UNIts?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:USE",
+      "syntax": "CURSor:VBArs:USE {CURrent|HALFgrat|FIVEdivs}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs:VDELTa?",
+      "syntax": "CURSor:VBArs:VDELTa?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:VBArs?",
+      "syntax": "CURSor:VBArs?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:RADIUS:DELta?",
+      "syntax": "CURSor:XY:POLar:RADIUS:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:RADIUS:POSITION<x>?",
+      "syntax": "CURSor:XY:POLar:RADIUS:POSITION<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:RADIUS:UNIts?",
+      "syntax": "CURSor:XY:POLar:RADIUS:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:THETA:DELta?",
+      "syntax": "CURSor:XY:POLar:THETA:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:THETA:POSITION<x>?",
+      "syntax": "CURSor:XY:POLar:THETA:POSITION<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:POLar:THETA:UNIts?",
+      "syntax": "CURSor:XY:POLar:THETA:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:PRODUCT:DELta?",
+      "syntax": "CURSor:XY:PRODUCT:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:PRODUCT:POSITION<x>?",
+      "syntax": "CURSor:XY:PRODUCT:POSITION<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:PRODUCT:UNIts?",
+      "syntax": "CURSor:XY:PRODUCT:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RATIO:DELta?",
+      "syntax": "CURSor:XY:RATIO:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RATIO:POSITION<x>?",
+      "syntax": "CURSor:XY:RATIO:POSITION<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RATIO:UNIts?",
+      "syntax": "CURSor:XY:RATIO:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:X:DELta?",
+      "syntax": "CURSor:XY:RECTangular:X:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:X:POSITION<x>",
+      "syntax": "CURSor:XY:RECTangular:X:POSITION<x> <NR3> CURSor:XY:RECTangular:X:POSITION<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:X:UNIts?",
+      "syntax": "CURSor:XY:RECTangular:X:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:Y:DELta?",
+      "syntax": "CURSor:XY:RECTangular:Y:DELta?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:Y:POSITION<x>",
+      "syntax": "CURSor:XY:RECTangular:Y:POSITION<x> <NR3> CURSor:XY:RECTangular:Y:POSITION<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor:XY:RECTangular:Y:UNIts?",
+      "syntax": "CURSor:XY:RECTangular:Y:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURSor?",
+      "syntax": "CURSor?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "CURVe",
+      "syntax": "CURVe {<Block>|<asc curve>} CURVe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "D<x>",
+      "syntax": "D<x>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "D<x>:LABel",
+      "syntax": "D<x>:LABel <Qstring> D<x>:LABel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "D<x>:POSition",
+      "syntax": "D<x>:POSition <NR3> D<x>:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "D<x>:THREshold",
+      "syntax": "D<x>:THREshold {ECL|TTL|<NR3>} D<x>:THREshold?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATE",
+      "syntax": "DATE <QString> DATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa",
+      "syntax": "DATa {INIT|SNAp} DATa?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:COMPosition",
+      "syntax": "DATa:COMPosition {COMPOSITE_YT|COMPOSITE_ENV|SINGULAR_YT} DATa:COMPosition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:COMPosition:AVAILable?",
+      "syntax": "DATa:COMPosition:AVAILable?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:DESTination",
+      "syntax": "DATa:DESTination REF<x> DATa:DESTination?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:ENCdg",
+      "syntax": "DATa:ENCdg {ASCIi|FAStest|RIBinary|RPBinary|SRIbinary|SRPbinary} DATa:ENCdg?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:RESOlution",
+      "syntax": "DATa:RESOlution {FULL|REDUced} DATa:RESOlution?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:SOUrce",
+      "syntax": "DATa:SOUrce {CH1|CH2|CH3|CH4|MATH|REF1|REF2| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} DATa:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:STARt",
+      "syntax": "DATa:STARt <NR1> DATa:STARt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:STOP",
+      "syntax": "DATa:STOP <NR1> DATa:STOP?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DATa:WIDth",
+      "syntax": "DATa:WIDth <NR1> DATa:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DESE",
+      "syntax": "DESE <NR1> DESE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:LOOP:OPTion",
+      "syntax": "DIAg:LOOP:OPTion {ALWAYS|FAIL|ONFAIL|ONCE|NTIMES}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:LOOP:OPTion:NTIMes",
+      "syntax": "DIAg:LOOP:OPTion:NTIMes <NR1> DIAg:LOOP:OPTion:NTIMes?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:LOOP:STOP",
+      "syntax": "DIAg:LOOP:STOP",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:RESUlt:FLAg?",
+      "syntax": "DIAg:RESUlt:FLAg?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:RESUlt:LOG?",
+      "syntax": "DIAg:RESUlt:LOG?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:SELect",
+      "syntax": "DIAg:SELect {ALL|APPKey|CPU|DISplay|FPAnel|IO|ROM|ACQ}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:SELect:<function>",
+      "syntax": "DIAg:SELect:<function>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DIAg:STATE",
+      "syntax": "DIAg:STATE {EXECute|ABORt}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:CLOCk",
+      "syntax": "DISplay:CLOCk {DATEOnly|TIMEOnly|DATETIME|NONe|ON|OFF|<NR1>} DISplay:CLOCk?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:DIGital:HEIght",
+      "syntax": "DISplay:DIGital:HEIght {SMAll|MEDium|LARge} DISplay:DIGital:HEIght?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:FORMat",
+      "syntax": "DISplay:FORMat {YT|XY} DISplay:FORMat?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:GLITch",
+      "syntax": "DISplay:GLITch {ON|OFF|<NR1>} DISplay:GLITch?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:GRAticule",
+      "syntax": "DISplay:GRAticule {CROSSHair|FRAme|FULl|GRId} DISplay:GRAticule?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:INTENSITy:BACKLight",
+      "syntax": "DISplay:INTENSITy:BACKLight {LOW|MEDium|HIGH} DISplay:INTENSITy:BACKLight?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:INTENSITy:GLITch",
+      "syntax": "DISplay:INTENSITy:GLITch {<NR1>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:INTENSITy:GRAticule",
+      "syntax": "DISplay:INTENSITy:GRAticule <NR1> DISplay:INTENSITy:GRAticule?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:INTENSITy:WAVEform",
+      "syntax": "DISplay:INTENSITy:WAVEform <NR1> DISplay:INTENSITy:WAVEform?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:INTENSITy?",
+      "syntax": "DISplay:INTENSITy?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay:PERSistence",
+      "syntax": "DISplay:PERSistence {<NR3>|CLEAR|AUTO|MINImum|INFInite} DISplay:PERSistence?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DISplay?",
+      "syntax": "DISplay?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DPO",
+      "syntax": "DPO Models: SEARCH:SEARCH<x>:TRIGger:A:SETHold:DATa:SOUrce {CH1|CH2|CH3|CH4|MATH|REF| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} SEARCH:SEARCH<x>:TRIGger:A:SETHold:DATa:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "DPO",
+      "syntax": "DPO Models: TRIGger:A:SETHold:DATa:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} TRIGger:A:SETHold:DATa:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:DHCPbootp",
+      "syntax": "ETHERnet:DHCPbootp {ON|OFF} ETHERnet:DHCPbootp?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:DNS:IPADDress",
+      "syntax": "ETHERnet:DNS:IPADDress <QString> ETHERnet:DNS:IPADDress?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:DOMAINname",
+      "syntax": "ETHERnet:DOMAINname <Qstring> ETHERnet:DOMAINname?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:ENET:ADDress?",
+      "syntax": "ETHERnet:ENET:ADDress?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:GATEWay:IPADDress",
+      "syntax": "ETHERnet:GATEWay:IPADDress <QString> ETHERnet:GATEWay:IPADDress?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:HTTPPort",
+      "syntax": "ETHERnet:HTTPPort <QString> ETHERnet:HTTPPort?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:IPADDress",
+      "syntax": "ETHERnet:IPADDress <QString> ETHERnet:IPADDress?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:NAME",
+      "syntax": "ETHERnet:NAME <QString> ETHERnet:NAME?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:PASSWord",
+      "syntax": "ETHERnet:PASSWord <new> ETHERnet:PASSWord?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:PING",
+      "syntax": "ETHERnet:PING EXECute",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:PING:STATUS?",
+      "syntax": "ETHERnet:PING:STATUS?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ETHERnet:SUBNETMask",
+      "syntax": "ETHERnet:SUBNETMask <QString> ETHERnet:SUBNETMask?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "EVENT?",
+      "syntax": "EVENT?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "EVMsg?",
+      "syntax": "EVMsg?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "EVQty?",
+      "syntax": "EVQty?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FACtory",
+      "syntax": "FACtory",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem",
+      "syntax": "FILESystem FILESystem?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:CWD",
+      "syntax": "FILESystem:CWD {<new working directory path>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:DELEte",
+      "syntax": "FILESystem:DELEte <file path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:DIR?",
+      "syntax": "FILESystem:DIR?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:FORMat",
+      "syntax": "FILESystem:FORMat",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:FREESpace?",
+      "syntax": "FILESystem:FREESpace?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:MKDir",
+      "syntax": "FILESystem:MKDir <directory path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:READFile",
+      "syntax": "FILESystem:READFile <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:REName",
+      "syntax": "FILESystem:REName <old file path>,<new file path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:RMDir",
+      "syntax": "FILESystem:RMDir <directory path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILESystem:WRITEFile",
+      "syntax": "FILESystem:WRITEFile <file path>, <data>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILTERVu:FREQuency:AVAILable?",
+      "syntax": "FILTERVu:FREQuency:AVAILable?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FILTERVu:FREQuency?",
+      "syntax": "FILTERVu:FREQuency? FILTERVu:FREQuency <NR3>",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FPAnel:PRESS",
+      "syntax": "FPAnel:PRESS <button>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "FPAnel:TURN",
+      "syntax": "FPAnel:TURN <knob>,[<n>]",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "GPIBUsb:ID?",
+      "syntax": "GPIBUsb:ID?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HARDCopy",
+      "syntax": "HARDCopy {START} HARDCopy?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HARDCopy:INKSaver?",
+      "syntax": "HARDCopy:INKSaver?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HARDCopy:PREVIEW",
+      "syntax": "HARDCopy:PREVIEW {ON|OFF|<NR1>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HEADer",
+      "syntax": "HEADer {OFF|ON|<NR1>} HEADer?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:ACQLENGTH?",
+      "syntax": "HORizontal:ACQLENGTH?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:DELay:MODe",
+      "syntax": "HORizontal:DELay:MODe {OFF|ON|<NR1>} HORizontal:DELay:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:DELay:TIMe",
+      "syntax": "HORizontal:DELay:TIMe <NR3> HORizontal:DELay:TIMe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:DIGital:RECOrdlength:MAIN?",
+      "syntax": "HORizontal:DIGital:RECOrdlength:MAIN?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:DIGital:SAMPLERate:MAIN?",
+      "syntax": "HORizontal:DIGital:SAMPLERate:MAIN?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:POSition",
+      "syntax": "HORizontal:POSition <NR3> HORizontal:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:PREViewstate?",
+      "syntax": "HORizontal:PREViewstate?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:RECOrdlength",
+      "syntax": "HORizontal:RECOrdlength <NR1> HORizontal:RECOrdlength?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:RESOlution",
+      "syntax": "HORizontal:RESOlution <NR1> HORizontal:RESOlution?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:SAMPLERate?",
+      "syntax": "HORizontal:SAMPLERate?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:SCAle",
+      "syntax": "HORizontal:SCAle <NR3> HORizontal:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal:TRIGger:POSition",
+      "syntax": "HORizontal:TRIGger:POSition HORizontal:TRIGger:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "HORizontal?",
+      "syntax": "HORizontal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ID?",
+      "syntax": "ID?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "LANGuage",
+      "syntax": "LANGuage {ENGLish|FRENch|GERMan|ITALian|SPANish|PORTUguese|JAPAnese| KOREan|RUSSian|SIMPlifiedchinese|TRADitionalchinese} LANGuage?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "LOCk",
+      "syntax": "LOCk {ALL|NONe} LOCk?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK",
+      "syntax": "MARK {NEXT|PREVious} MARK?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:CREATE",
+      "syntax": "MARK:CREATE {CH<x>|MATH|B<x>|REF<x>|COLUMN|DIGItal}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:DELEte",
+      "syntax": "MARK:DELEte {CH<x>|MATH|B<x>|REF<x>|COLUMN|DIGItal}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:FREE?",
+      "syntax": "MARK:FREE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:END?",
+      "syntax": "MARK:SELected:END?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:FOCUS?",
+      "syntax": "MARK:SELected:FOCUS?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:MARKSINCOLumn?",
+      "syntax": "MARK:SELected:MARKSINCOLumn?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:OWNer?",
+      "syntax": "MARK:SELected:OWNer?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:SOURCE?",
+      "syntax": "MARK:SELected:SOURCE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:STARt?",
+      "syntax": "MARK:SELected:STARt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:STATe?",
+      "syntax": "MARK:SELected:STATe?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:SELected:ZOOm:POSition?",
+      "syntax": "MARK:SELected:ZOOm:POSition?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MARK:TOTal?",
+      "syntax": "MARK:TOTal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:DEFine",
+      "syntax": "MATH[1]:DEFine <QString> MATH[1]:DEFine?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:HORizontal:POSition",
+      "syntax": "MATH[1]:HORizontal:POSition <NR3> MATH[1]:HORizontal:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:HORizontal:SCAle",
+      "syntax": "MATH[1]:HORizontal:SCAle <NR3> MATH[1]:HORizontal:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:HORizontal:UNIts?",
+      "syntax": "MATH[1]:HORizontal:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:LABel",
+      "syntax": "MATH[1]:LABel <QString> MATH[1]:LABel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:GATing:INDICators",
+      "syntax": "MATH[1]:SPECTral:GATing:INDICators {<NR1>|OFF|ON} MATH[1]:SPECTral:GATing:INDICators?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:GATing:INDICators:END?",
+      "syntax": "MATH[1]:SPECTral:GATing:INDICators:END?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:GATing:INDICators:STARt?",
+      "syntax": "MATH[1]:SPECTral:GATing:INDICators:STARt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:MAG",
+      "syntax": "MATH[1]:SPECTral:MAG {LINEAr|DB} MATH[1]:SPECTral:MAG?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:NYQUISTFreq?",
+      "syntax": "MATH[1]:SPECTral:NYQUISTFreq?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:SPECTral:WINdow",
+      "syntax": "MATH[1]:SPECTral:WINdow {RECTangular|HAMming|HANning|BLAckmanharris} MATH[1]:SPECTral:WINdow?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:TYPe",
+      "syntax": "MATH[1]:TYPe {DUAL|FFT} MATH[1]:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:VERTical:POSition",
+      "syntax": "MATH[1]:VERTical:POSition <NR3> MATH[1]:VERTical:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:VERTical:SCAle",
+      "syntax": "MATH[1]:VERTical:SCAle <NR3> MATH[1]:VERTical:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]:VERTical:UNIts?",
+      "syntax": "MATH[1]:VERTical:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MATH[1]?",
+      "syntax": "MATH[1]?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:CLEARSNapshot",
+      "syntax": "MEASUrement:CLEARSNapshot",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:GATing",
+      "syntax": "MEASUrement:GATing {OFF|SCREen|CURSor} MEASUrement:GATing?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:DELay:DIRection",
+      "syntax": "MEASUrement:IMMed:DELay:DIRection {BACKWards|FORWards} MEASUrement:IMMed:DELay:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:DELay:EDGE<x>",
+      "syntax": "MEASUrement:IMMed:DELay:EDGE<x> {FALL|RISe} MEASUrement:IMMed:DELay:EDGE<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:DELay?",
+      "syntax": "MEASUrement:IMMed:DELay?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:SOUrce1",
+      "syntax": "MEASUrement:IMMed:SOUrce1 {CH<x>|MATH<y>|REF<x>} MEASUrement:IMMed:SOUrce1?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:SOUrce2",
+      "syntax": "MEASUrement:IMMed:SOUrce2 {CH<x>|MATH<y>|REF<x>} MEASUrement:IMMed:SOUrce2?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:SOUrce<x>",
+      "syntax": "MEASUrement:IMMed:SOUrce<x> {CH1|CH2|CH3|CH4|MATH} MEASUrement:IMMed:SOUrce<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:TYPe",
+      "syntax": "MEASUrement:IMMed:TYPe {AMPlitude|AREa|BURst|CARea|CMEan|CRMs|DELay|FALL|FREQuency |HIGH|LOW|MAXimum|MEAN|MINImum|NDUty|NEDGECount|NOVershoot |NPULSECount|NWIdth|PEDGECount|PDUty |PERIod|PHAse|PK2Pk|POVershoot|PPULSECount|PWIdth|RISe|RMS} MEASUrement:IMMed:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:UNIts?",
+      "syntax": "MEASUrement:IMMed:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed:VALue?",
+      "syntax": "MEASUrement:IMMed:VALue?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:IMMed?",
+      "syntax": "MEASUrement:IMMed?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators:HORZ<x>?",
+      "syntax": "MEASUrement:INDICators:HORZ<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators:NUMHORZ?",
+      "syntax": "MEASUrement:INDICators:NUMHORZ?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators:NUMVERT?",
+      "syntax": "MEASUrement:INDICators:NUMVERT?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators:STATE",
+      "syntax": "MEASUrement:INDICators:STATE {OFF|MEAS<x>} MEASUrement:INDICators:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators:VERT<x>?",
+      "syntax": "MEASUrement:INDICators:VERT<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:INDICators?",
+      "syntax": "MEASUrement:INDICators?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:COUNt?",
+      "syntax": "MEASUrement:MEAS<x>:COUNt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:DELay:DIRection",
+      "syntax": "MEASUrement:MEAS<x>:DELay:DIRection {BACKWards|FORWards} MEASUrement:MEAS<x>:DELay:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:DELay:EDGE<x>",
+      "syntax": "MEASUrement:MEAS<x>:DELay:EDGE<x> {FALL|RISe} MEASUrement:MEAS<x>:DELay:EDGE<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:DELay?",
+      "syntax": "MEASUrement:MEAS<x>:DELay?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:MAXimum?",
+      "syntax": "MEASUrement:MEAS<x>:MAXimum?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:MEAN?",
+      "syntax": "MEASUrement:MEAS<x>:MEAN?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:MINImum?",
+      "syntax": "MEASUrement:MEAS<x>:MINImum?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:SOURCE2",
+      "syntax": "MEASUrement:MEAS<x>:SOURCE2 {CH<x>|MATH<y>|REF<x>} MEASUrement:MEAS<x>:SOURCE2?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:SOURCE[1]",
+      "syntax": "MEASUrement:MEAS<x>:SOURCE[1] {CH<x>|MATH<y>|REF<x>} MEASUrement:MEAS<x>:SOURCE[1]?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:SOUrce<x>",
+      "syntax": "MEASUrement:MEAS<x>:SOUrce<x> {CH<x>|MATH|} MEASUrement:MEAS<x>:SOUrce<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:STATE",
+      "syntax": "MEASUrement:MEAS<x>:STATE {OFF|ON|<NR1>} MEASUrement:MEAS<x>:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:STDdev?",
+      "syntax": "MEASUrement:MEAS<x>:STDdev?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:TYPe",
+      "syntax": "MEASUrement:MEAS<x>:TYPe {AMPlitude|AREa|BURst|CARea|CMEan|CRMs|DELay|FALL|FREQuency |HIGH|LOW|MAXimum|MEAN|MINImum|NDUty|NEDGECount|NOVershoot |NPULSECount|NWIdth|PDUty|PEDGECount|PERIod|PHAse|PK2Pk |POVershoot|PPULSECount|PWIdth|RISe|RMS} MEASUrement:MEAS<x>:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:UNIts?",
+      "syntax": "MEASUrement:MEAS<x>:UNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>:VALue?",
+      "syntax": "MEASUrement:MEAS<x>:VALue?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:MEAS<x>?",
+      "syntax": "MEASUrement:MEAS<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:METHod",
+      "syntax": "MEASUrement:METHod {Auto|HIStogram|MINMax} MEASUrement:METHod?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:ABSolute:HIGH",
+      "syntax": "MEASUrement:REFLevel:ABSolute:HIGH <NR3> MEASUrement:REFLevel:ABSolute:HIGH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:ABSolute:LOW",
+      "syntax": "MEASUrement:REFLevel:ABSolute:LOW <NR3> MEASUrement:REFLevel:ABSolute:LOW?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:ABSolute:MID2",
+      "syntax": "MEASUrement:REFLevel:ABSolute:MID2 <NR3> MEASUrement:REFLevel:ABSolute:MID2?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:ABSolute:MID<x>",
+      "syntax": "MEASUrement:REFLevel:ABSolute:MID<x> <NR3> MEASUrement:REFLevel:ABSolute:MID<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:ABSolute:MID[1]",
+      "syntax": "MEASUrement:REFLevel:ABSolute:MID[1] <NR3> MEASUrement:REFLevel:ABSolute:MID[1]?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:METHod",
+      "syntax": "MEASUrement:REFLevel:METHod {ABSolute|PERCent} MEASUrement:REFLevel:METHod?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:PERCent:HIGH",
+      "syntax": "MEASUrement:REFLevel:PERCent:HIGH <NR3> MEASUrement:REFLevel:PERCent:HIGH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:PERCent:LOW",
+      "syntax": "MEASUrement:REFLevel:PERCent:LOW <NR3> MEASUrement:REFLevel:PERCent:LOW?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:PERCent:MID2",
+      "syntax": "MEASUrement:REFLevel:PERCent:MID2 <NR3> MEASUrement:REFLevel:PERCent:MID2?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:PERCent:MID<x>",
+      "syntax": "MEASUrement:REFLevel:PERCent:MID<x> <NR3> MEASUrement:REFLevel:PERCent:MID<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel:PERCent:MID[1]",
+      "syntax": "MEASUrement:REFLevel:PERCent:MID[1] <NR3> MEASUrement:REFLevel:PERCent:MID[1]?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:REFLevel?",
+      "syntax": "MEASUrement:REFLevel?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement:SNAPShot",
+      "syntax": "MEASUrement:SNAPShot",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MEASUrement?",
+      "syntax": "MEASUrement?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MESSage",
+      "syntax": "MESSage MESSage?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MESSage:BOX",
+      "syntax": "MESSage:BOX <X1>,<Y1>[,<X2>,<Y2>] MESSage:BOX?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MESSage:CLEAR",
+      "syntax": "MESSage:CLEAR",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MESSage:SHOW",
+      "syntax": "MESSage:SHOW <QString> MESSage:SHOW?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "MESSage:STATE",
+      "syntax": "MESSage:STATE {OFF|ON|<NR1>} MESSage:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "NEWpass",
+      "syntax": "NEWpass <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PASSWord",
+      "syntax": "PASSWord <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:DATEPrint",
+      "syntax": "PICTBridge:DATEPrint {DEFLT|OFF|ON}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:DEFault",
+      "syntax": "PICTBridge:DEFault",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:IDPrint",
+      "syntax": "PICTBridge:IDPrint {DEFLT|OFF|ON} PICTBridge:IDPrint?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:IMAGESize",
+      "syntax": "PICTBridge:IMAGESize {DEFLT|IN2P5BY3P25|L|IN4BY6|L2| IN8BY10|L4|E|CARD|HAGAKIPC|CM6BY8|CM7BY10|CM9BY13| CM10BY15|CM13BY18|CM15BY21|CM18BY24| A4|LETTER}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:PAPERSize",
+      "syntax": "PICTBridge:PAPERSize {DEFLT|L|L2|HAGAKIPCARD|MM54BY86|MM100BY150 |IN4BY6|IN8BY10|LETTER|IN11BY17|A0|A1|A2|A3|A4|A5|A6|A7|A8|A9| B0|B1|B2|B3| B4|B5|B6|B7|B8|B9|ROLL89MM|ROLL127MM|ROLL100MM|ROLL210MM}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:PAPERType",
+      "syntax": "PICTBridge:PAPERType {DEFLT|PLAIN|PHOTO|FASTPHOTO}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "PICTBridge:PRINTQual",
+      "syntax": "PICTBridge:PRINTQual {DEFLT|NRMAL|FINE|DRAFT}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "RECAll:SETUp",
+      "syntax": "RECAll:SETUp {FACtory|<NR1>|<file path>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "RECAll:WAVEform",
+      "syntax": "RECAll:WAVEform <file path>,REF<x>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:DATE?",
+      "syntax": "REF<x>:DATE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:HORizontal:DELay:TIMe",
+      "syntax": "REF<x>:HORizontal:DELay:TIMe <NR3> REF<x>:HORizontal:DELay:TIMe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:HORizontal:SCAle",
+      "syntax": "REF<x>:HORizontal:SCAle <NR3> REF<x>:HORizontal:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:LABel",
+      "syntax": "REF<x>:LABel <Qstring> REF<x>:LABel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:POSition",
+      "syntax": "REF<x>:POSition <NR3> REF<x>:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:SCAle",
+      "syntax": "REF<x>:SCAle <NR3> REF<x>:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:TIMe?",
+      "syntax": "REF<x>:TIMe?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:VERTical:POSition",
+      "syntax": "REF<x>:VERTical:POSition <NR3> REF<x>:VERTical:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>:VERTical:SCAle",
+      "syntax": "REF<x>:VERTical:SCAle <NR3> REF<x>:VERTical:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REF<x>?",
+      "syntax": "REF<x>?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "REM",
+      "syntax": "REM <QString>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:ASSIgn:TYPe",
+      "syntax": "SAVe:ASSIgn:TYPe {IMAGe|WAVEform|SETUp} SAVe:ASSIgn:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:EVENTtable:BUS<x>",
+      "syntax": "SAVe:EVENTtable:BUS<x> <file path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:IMAGe",
+      "syntax": "SAVe:IMAGe <file path>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:IMAGe:FILEFormat",
+      "syntax": "SAVe:IMAGe:FILEFormat {PNG|BMP|TIFf} SAVe:IMAGe:FILEFormat?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:IMAGe:LAYout",
+      "syntax": "SAVe:IMAGe:LAYout {LANdscape|PORTRait} SAVe:IMAGe:LAYout?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:SETUp",
+      "syntax": "SAVe:SETUp {<file path>|<NR1>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:WAVEform:FILEFormat",
+      "syntax": "SAVe:WAVEform:FILEFormat {INTERNal|SPREADSheet} SAVe:WAVEform:FILEFormat?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:WAVEform:GATIng",
+      "syntax": "SAVe:WAVEform:GATIng {NONe|CURSors|SCREEN} SAVe:WAVEform:GATIng?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:WAVEform:SPREADSheet:RESOlution",
+      "syntax": "SAVe:WAVEform:SPREADSheet:RESOlution {FULL|REDUced} SAVe:WAVEform:SPREADSheet:RESOlution?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SAVe:WAVEform[<wfm>,{REF<x>}]",
+      "syntax": "SAVe:WAVEform[<wfm>,{REF<x>}] | [<wfm>, <QString>] | [ALL, <QString>]",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:COPy",
+      "syntax": "SEARCH:SEARCH<x>:COPy {SEARCHtotrigger|TRIGgertosearch}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:STATE",
+      "syntax": "SEARCH:SEARCH<x>:STATE {<NR1>|OFF|ON} SEARCH:SEARCH<x>:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TOTAL?",
+      "syntax": "SEARCH:SEARCH<x>:TOTAL?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:CONDition",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:CONDition {SOF|FRAMEtype|IDentifier|DATA|IDANDDATA|EOF|ACKMISS|ERROR} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:DIRection",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:DIRection {READ|WRITE|NOCARE} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier {LESSThan|MOREThan|UNEQual|LESSEQual|MOREEQual|EQual} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:SIZe <NR1> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:FRAMEtype",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:FRAMEtype {DATA|REMote|ERRor|OVERLoad} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN:FRAMEtype?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|:",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|: ADDRess}:MODe {STandard|EXTended} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|: ADDRess}:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|:",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|: ADDRess}:VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:CAN{:IDentifier|: ADDRess}:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe {ADDR7|ADDR10} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe {GENeralcall|STARtbyte|HSmode|EEPROM|USER} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:CONDition",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:CONDition {STARt|STOP|REPEATstart|ACKMISS|ADDRess|DATA|ADDRANDDATA} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:DIRection",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:DIRection {READ|WRITE|NOCARE} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:SIZe <NR1> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:I2C:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:CONDition",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:CONDition {SYNCField|IDentifier|DATA|IDANDDATA|WAKEup|SLEEP|ERROR} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue <QString> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier {LESSThan|MOREThan|EQUal|UNEQual| LESSEQual|MOREEQual|INrange|OUTrange} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:SIZe <NR1> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:VALue <QString> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:ERRTYPE",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:ERRTYPE {SYNC|PARity|CHecksum} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:ERRTYPE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue <QString> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:PARallel:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:PARallel:VALue <QString> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:PARallel:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:CONDition",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:CONDition {RXSTArt|RXDATA|RXENDPacket|RXPARity|TXSTArt| TXDATA|TXENDPacket|TXPARity} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:CONDition",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:CONDition {SS|MISO|MOSI|MISOMOSI} SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa:SIZe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa:SIZe <NR1> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MISO|:IN}:",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MISO|:IN}: VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MISO|:IN}: VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MOSI|:OUT}:",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MOSI|:OUT}: VALue <bin> SEARCH:SEARCH<x>:TRIGger:A:BUS:B<x>:SPI:DATa{:MOSI|:OUT}: VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS:SOUrce {B1|B2} SEARCH:SEARCH<x>:TRIGger:A:BUS:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:BUS?",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:BUS? SEARCH:SEARCH<x>:TRIGger:A:BUS??",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:EDGE:SLOpe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:EDGE:SLOpe {RISe|FALL} SEARCH:SEARCH<x>:TRIGger:A:EDGE:SLOpe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:EDGE:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:EDGE:SOUrce {CH1|CH2|CH3|CH4|MATH} SEARCH:SEARCH<x>:TRIGger:A:EDGE:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LEVel",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LEVel {<NR3>|TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:LEVel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:CH<x> {<NR3>|TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:LEVel:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:MATH {TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:LEVel:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LEVel:REF<x> {TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:LEVel:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:FUNCtion",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:FUNCtion {AND|NANd} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:FUNCtion?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CH<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:EDGE",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:EDGE {FALL|RISe|EITher} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:EDGE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:SOUrce {CH<x>|MATH|REF|D<x>|NONe} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:CLOCk:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:D<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:D<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:MATH {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:REF<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:INPut:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:CH<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:D<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:D<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:MATH {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:REF<x> {HIGH|LOW|X} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:INPut:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn {TRUe|FALSe|LESSThan|MOREThan|Than|EQUal|UNEQual} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit <NR3> SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:MORELimit",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:MORELimit <NR3> SEARCH:SEARCH<x>:TRIGger:A:LOGIc:PATtern:WHEn:MORELimit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:CH<x> {<NR3>|TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:MATH {TTL|ECL|<NR3>} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:REF<x> {TTL|ECL|<NR3>} SEARCH:SEARCH<x>:TRIGger:A:LOGIc:THReshold:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:CH<x> {TTL|ECL|<NR3>} SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:MATH {TTL|ECL|<NR3>} SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:REF<x> {TTL|ECL|<NR3>} SEARCH:SEARCH<x>:TRIGger:A:LOWerthreshold:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:POLarity",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:POLarity {NEGative|POSitive} SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:SOUrce {CH1|CH2|CH3|CH4|MATH|REF} SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WHEn",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WHEn {LESSthan|MOREthan|EQual|UNEQual} SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WIDth",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WIDth <NR3> SEARCH:SEARCH<x>:TRIGger:A:PULSEWidth:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:POLarity",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:POLarity {EITher|NEGative|POSitive} SEARCH:SEARCH<x>:TRIGger:A:RUNT:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:SOUrce {CH1|CH2|CH3|CH4|MATH|REF} SEARCH:SEARCH<x>:TRIGger:A:RUNT:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:WHEn",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:WHEn {LESSthan|MOREthan|EQual|UNEQual|OCCURS} SEARCH:SEARCH<x>:TRIGger:A:RUNT:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:WIDth",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:RUNT:WIDth <NR3> SEARCH:SEARCH<x>:TRIGger:A:RUNT:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:EDGE",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:EDGE {FALL|RISe} SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:EDGE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:SOUrce {CH1|CH2|CH3|CH4|MATH|REF} SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:THReshold",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:THReshold {<NR3>|TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:SETHold:CLOCk:THReshold?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:DATa:THReshold",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:DATa:THReshold {<NR3>|TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:SETHold:DATa:THReshold?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:HOLDTime",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:HOLDTime <NR3> SEARCH:SEARCH<x>:TRIGger:A:SETHold:HOLDTime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:SETTime",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:SETTime <NR3> SEARCH:SEARCH<x>:TRIGger:A:SETHold:SETTime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:CH<x> <NR3> SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:REF<x> <NR3> SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold{:MATH|:MATH1}",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold{:MATH|:MATH1} <NR3> SEARCH:SEARCH<x>:TRIGger:A:SETHold:THReshold{:MATH|:MATH1}?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:TYPe",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:TYPe {EDGe|SETHold|PULSEWidth|RUNt|TRAnsition|LOGIc|BUS (with the appropriate application module installed)} SEARCH:SEARCH<x>:TRIGger:A:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:CH<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:CH<x> {TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:MATH",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:MATH {TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:MATH?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:REF<x>",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:REF<x> {TTL|ECL} SEARCH:SEARCH<x>:TRIGger:A:UPPerthreshold:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:DELTatime",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:DELTatime <NR3> SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:DELTatime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:POLarity",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:POLarity {EITher|NEGative|POSitive} SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:SOUrce",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:SOUrce {CH1|CH2|CH3|CH4|MATH} SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:WHEn",
+      "syntax": "SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:WHEn {SLOWer|FASTer|EQual|UNEQual} SEARCH:SEARCH<x>:TRIGger:A{:TRANsition|:RISEFall}:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SEARCH?",
+      "syntax": "SEARCH?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect",
+      "syntax": "SELect {ON|OFF}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:BUS<x>",
+      "syntax": "SELect:BUS<x> {<NR1>|OFF|ON} SELect:BUS<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:CH<x>",
+      "syntax": "SELect:CH<x> {ON|OFF|<NR1>} SELect:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:CONTROl",
+      "syntax": "SELect:CONTROl {CH<x>|MATH|BUS<x>} SELect:CONTROl?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:D<x>",
+      "syntax": "SELect:D<x> {<NR1>|OFF|ON} SELect:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:MATH[1]",
+      "syntax": "SELect:MATH[1] {ON|OFF|<NR1>} SELect:MATH[1]?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SELect:REF<x>",
+      "syntax": "SELect:REF<x> {ON|OFF|<NR1>} SELect:REF<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SET?",
+      "syntax": "SET?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SETUP<x>:DATE?",
+      "syntax": "SETUP<x>:DATE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SETUP<x>:LABEL",
+      "syntax": "SETUP<x>:LABEL <Qstring>",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "SETUP<x>:TIME?",
+      "syntax": "SETUP<x>:TIME?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TEKSecure",
+      "syntax": "TEKSecure",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TIME",
+      "syntax": "TIME <QString> TIME?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TOTaluptime?",
+      "syntax": "TOTaluptime?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger",
+      "syntax": "TRIGger FORCe TRIGger?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A",
+      "syntax": "TRIGger:A SETLevel TRIGger:A?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS",
+      "syntax": "TRIGger:A:BUS {I2C|SPI|CAN|RS232} TRIGger:A:BUS?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:CONDition",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:CONDition {SOF|FRAMEtype|IDentifier|DATA|IDANDDATA|EOF|ACKMISS} TRIGger:A:BUS:B<x>:CAN:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:DATa:DIRection",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:DATa:DIRection {READ|WRITE|NOCARE} TRIGger:A:BUS:B<x>:CAN:DATa:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier {LESSThan|MOREThan|EQUal|UNEQual|LESSEQual|MOREEQual} TRIGger:A:BUS:B<x>:CAN:DATa:QUALifier?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:CAN:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:DATa:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:DATa:VALue <QString> TRIGger:A:BUS:B<x>:CAN:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN:FRAMEtype",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN:FRAMEtype {DATA|REMote|ERRor|OVERLoad} TRIGger:A:BUS:B<x>:CAN:FRAMEtype?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:MODe",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:MODe {STandard|EXTended} TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:VALue <QString> TRIGger:A:BUS:B<x>:CAN{:IDentifier|:ADDRess}:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe {ADDR7|ADDR10} TRIGger:A:BUS:B<x>:I2C:ADDRess:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe {GENeralcall|STARtbyte|HSmode|EEPROM|USER} TRIGger:A:BUS:B<x>:I2C:ADDRess:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue <QString> TRIGger:A:BUS:B<x>:I2C:ADDRess:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:CONDition",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:CONDition {STARt|STOP|REPEATstart|ACKMISS|ADDRess|DATA|ADDRANDDATA} TRIGger:A:BUS:B<x>:I2C:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:DATa:DIRection",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:DATa:DIRection {READ|WRITE|NOCARE} TRIGger:A:BUS:B<x>:I2C:DATa:DIRection?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:I2C:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:I2C:DATa:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:I2C:DATa:VALue <QString> TRIGger:A:BUS:B<x>:I2C:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:CONDition",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:CONDition {SYNCField|IDentifier|DATA|IDANDDATA|WAKEup|SLEEP|ERROR} TRIGger:A:BUS:B<x>:LIN:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue <QString> TRIGger:A:BUS:B<x>:LIN:DATa:HIVALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier {LESSThan|MOREThan|EQUal|UNEQual|LESSEQual|MOREEQual|INrange|OUTrange TRIGger:A:BUS:B<x>:LIN:DATa:QUALifier?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:LIN:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:DATa:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:DATa:VALue <QString> TRIGger:A:BUS:B<x>:LIN:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:ERRTYPE",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:ERRTYPE {SYNC|PARity|CHecksum} TRIGger:A:BUS:B<x>:LIN:ERRTYPE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue <QString> TRIGger:A:BUS:B<x>:LIN:IDentifier:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:PARallel:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:PARallel:VALue <QString> TRIGger:A:BUS:B<x>:PARallel:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:RS232C:CONDition",
+      "syntax": "TRIGger:A:BUS:B<x>:RS232C:CONDition {RXSTArt|RXDATA|RXENDPacket|RXPARity|TXSTArt| TXDATA|TXENDPacket|TXPARity|} TRIGger:A:BUS:B<x>:RS232C:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:RS232C:RX:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue TRIGger:A:BUS:B<x>:RS232C:RX:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:RS232C:TX:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue TRIGger:A:BUS:B<x>:RS232C:TX:DATa:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:SPI:CONDition",
+      "syntax": "TRIGger:A:BUS:B<x>:SPI:CONDition {SS|STARTofframe|MISO|MOSI|MISOMOSI} TRIGger:A:BUS:B<x>:SPI:CONDition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:SPI:DATa:SIZe",
+      "syntax": "TRIGger:A:BUS:B<x>:SPI:DATa:SIZe <NR1> TRIGger:A:BUS:B<x>:SPI:DATa:SIZe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:SPI:DATa{:IN|:MISO}:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:SPI:DATa{:IN|:MISO}:VALue <QString> TRIGger:A:BUS:B<x>:SPI:DATa{:IN|:MISO}:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:B<x>:SPI:DATa{:OUT|:MOSI}:VALue",
+      "syntax": "TRIGger:A:BUS:B<x>:SPI:DATa{:OUT|:MOSI}:VALue <QString> TRIGger:A:BUS:B<x>:SPI:DATa{:OUT|:MOSI}:VALue?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:BUS:SOUrce",
+      "syntax": "TRIGger:A:BUS:SOUrce {B1|B2} TRIGger:A:BUS:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:EDGE:COUPling",
+      "syntax": "TRIGger:A:EDGE:COUPling {DC|HFRej|LFRej|NOISErej} TRIGger:A:EDGE:COUPling?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:EDGE:SLOpe",
+      "syntax": "TRIGger:A:EDGE:SLOpe {RISe|FALL} TRIGger:A:EDGE:SLOpe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:EDGE:SOUrce",
+      "syntax": "TRIGger:A:EDGE:SOUrce {{CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13| D14|D15|EXT|LINE|AUX} TRIGger:A:EDGE:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:EDGE?",
+      "syntax": "TRIGger:A:EDGE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:HOLDoff:TIMe",
+      "syntax": "TRIGger:A:HOLDoff:TIMe <NR3> TRIGger:A:HOLDoff:TIMe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:HOLDoff?",
+      "syntax": "TRIGger:A:HOLDoff?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LEVel",
+      "syntax": "TRIGger:A:LEVel {ECL|TTL|<NR3>} TRIGger:A:LEVel?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LEVel:AUXin",
+      "syntax": "TRIGger:A:LEVel:AUXin {<NR3>|ECL|TTL} TRIGger:A:LEVel:AUXin?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LEVel:CH<x>",
+      "syntax": "TRIGger:A:LEVel:CH<x> {<NR3>|TTL|ECL} TRIGger:A:LEVel:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LEVel:D<x>",
+      "syntax": "TRIGger:A:LEVel:D<x> {<NR3>|ECL|TTL} TRIGger:A:LEVel:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:CLAss",
+      "syntax": "TRIGger:A:LOGIc:CLAss {LOGIC|SETHold} TRIGger:A:LOGIc:CLAss?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:FUNCtion",
+      "syntax": "TRIGger:A:LOGIc:FUNCtion {AND|NANd} TRIGger:A:LOGIc:FUNCtion?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:INPut:CH<x>",
+      "syntax": "TRIGger:A:LOGIc:INPut:CH<x> {HIGH|LOW|X} TRIGger:A:LOGIc:INPut:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:INPut:CLOCk:EDGE",
+      "syntax": "TRIGger:A:LOGIc:INPut:CLOCk:EDGE {FALL|RISe|EITher} TRIGger:A:LOGIc:INPut:CLOCk:EDGE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:INPut:CLOCk:SOUrce",
+      "syntax": "TRIGger:A:LOGIc:INPut:CLOCk:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15|NONE} TRIGger:A:LOGIc:INPut:CLOCk:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:INPut:D<x>",
+      "syntax": "TRIGger:A:LOGIc:INPut:D<x> {HIGH|LOW|X} TRIGger:A:LOGIc:INPut:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:INPut?",
+      "syntax": "TRIGger:A:LOGIc:INPut?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern:DELTatime",
+      "syntax": "TRIGger:A:LOGIc:PATtern:DELTatime <NR3> TRIGger:A:LOGIc:PATtern:DELTatime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern:INPut:D<x>",
+      "syntax": "TRIGger:A:LOGIc:PATtern:INPut:D<x> {HIGH|LOW|X} TRIGger:A:LOGIc:PATtern:INPut:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern:WHEn",
+      "syntax": "TRIGger:A:LOGIc:PATtern:WHEn {TRUe|FALSe|LESSThan|MOREThan|EQUal|UNEQual} TRIGger:A:LOGIc:PATtern:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit",
+      "syntax": "TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit <NR3> TRIGger:A:LOGIc:PATtern:WHEn:LESSLimit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern:WHEn:MORELimit",
+      "syntax": "TRIGger:A:LOGIc:PATtern:WHEn:MORELimit <NR3> TRIGger:A:LOGIc:PATtern:WHEn:MORELimit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:PATtern?",
+      "syntax": "TRIGger:A:LOGIc:PATtern?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc:THReshold:(CH<x>|D<x>)",
+      "syntax": "TRIGger:A:LOGIc:THReshold:(CH<x>|D<x>) {<NR3>|ECL|TTL} TRIGger:A:LOGIc:THReshold:(CH<x>|D<x>)?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOGIc?",
+      "syntax": "TRIGger:A:LOGIc?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOWerthreshold:CH<x>",
+      "syntax": "TRIGger:A:LOWerthreshold:CH<x> {ECL|TTL|<NR3>} TRIGger:A:LOWerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:LOWerthreshold{:EXT|:AUX}",
+      "syntax": "TRIGger:A:LOWerthreshold{:EXT|:AUX} {<NR3>|ECL|TTL} TRIGger:A:LOWerthreshold{:EXT|:AUX}?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:MODe",
+      "syntax": "TRIGger:A:MODe {AUTO|NORMal} TRIGger:A:MODe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULSEWIDth?",
+      "syntax": "TRIGger:A:PULSEWIDth?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULSEWidth:POLarity",
+      "syntax": "TRIGger:A:PULSEWidth:POLarity {NEGative|POSitive} TRIGger:A:PULSEWidth:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULSEWidth:SOUrce",
+      "syntax": "TRIGger:A:PULSEWidth:SOUrce {{CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15|LINE|EXT} TRIGger:A:PULSEWidth:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULSEWidth:WHEn",
+      "syntax": "TRIGger:A:PULSEWidth:WHEn {LESSthan|MOREthan|EQual|UNEQual} TRIGger:A:PULSEWidth:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULSEWidth:WIDth",
+      "syntax": "TRIGger:A:PULSEWidth:WIDth <NR3> TRIGger:A:PULSEWidth:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULse:CLAss",
+      "syntax": "TRIGger:A:PULse:CLAss {RUNt|WIDth|TRANsition} TRIGger:A:PULse:CLAss?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:PULse?",
+      "syntax": "TRIGger:A:PULse?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:RUNT:POLarity",
+      "syntax": "TRIGger:A:RUNT:POLarity {EITher|NEGative|POSitive} TRIGger:A:RUNT:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:RUNT:SOUrce",
+      "syntax": "TRIGger:A:RUNT:SOUrce {CH1|CH2|CH3|CH4} TRIGger:A:RUNT:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:RUNT:WHEn",
+      "syntax": "TRIGger:A:RUNT:WHEn {LESSthan|MOREthan|EQual|UNEQual|OCCURS} TRIGger:A:RUNT:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:RUNT:WIDth",
+      "syntax": "TRIGger:A:RUNT:WIDth <NR3> TRIGger:A:RUNT:WIDth?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:RUNT?",
+      "syntax": "TRIGger:A:RUNT?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:CLOCk:EDGE",
+      "syntax": "TRIGger:A:SETHold:CLOCk:EDGE {FALL|RISe} TRIGger:A:SETHold:CLOCk:EDGE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:CLOCk:SOUrce",
+      "syntax": "TRIGger:A:SETHold:CLOCk:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} TRIGger:A:SETHold:CLOCk:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:CLOCk:THReshold",
+      "syntax": "TRIGger:A:SETHold:CLOCk:THReshold {<NR3>|TTL|ECL} TRIGger:A:SETHold:CLOCk:THReshold?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:CLOCk?",
+      "syntax": "TRIGger:A:SETHold:CLOCk?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:DATa:THReshold",
+      "syntax": "TRIGger:A:SETHold:DATa:THReshold {<NR3>|TTL|ECL} TRIGger:A:SETHold:DATa:THReshold?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:DATa?",
+      "syntax": "TRIGger:A:SETHold:DATa?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:HOLDTime",
+      "syntax": "TRIGger:A:SETHold:HOLDTime <NR3> TRIGger:A:SETHold:HOLDTime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:SETTime",
+      "syntax": "TRIGger:A:SETHold:SETTime <NR3> TRIGger:A:SETHold:SETTime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:THReshold:CH<x>",
+      "syntax": "TRIGger:A:SETHold:THReshold:CH<x> {<NR3>|ECL|TTL} TRIGger:A:SETHold:THReshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold:THReshold:D<x>",
+      "syntax": "TRIGger:A:SETHold:THReshold:D<x> {<NR3>|ECL|TTL} TRIGger:A:SETHold:THReshold:D<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:SETHold?",
+      "syntax": "TRIGger:A:SETHold?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:TYPe",
+      "syntax": "TRIGger:A:TYPe {EDGe|LOGic|PULSe|BUS|VIDeo} TRIGger:A:TYPe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:UPPerthreshold:CH<x>",
+      "syntax": "TRIGger:A:UPPerthreshold:CH<x> {<NR3>|ECL|TTL} TRIGger:A:UPPerthreshold:CH<x>?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo:HOLDoff:FIELD",
+      "syntax": "TRIGger:A:VIDeo:HOLDoff:FIELD <NR3> TRIGger:A:VIDeo:HOLDoff:FIELD?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo:LINE",
+      "syntax": "TRIGger:A:VIDeo:LINE <NR1> TRIGger:A:VIDeo:LINE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo:POLarity",
+      "syntax": "TRIGger:A:VIDeo:POLarity {NEGative|POSitive|NORMal|INVERTed} TRIGger:A:VIDeo:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo:SOUrce",
+      "syntax": "TRIGger:A:VIDeo:SOUrce {CH1|CH2|CH3|CH4} TRIGger:A:VIDeo:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo:STANdard",
+      "syntax": "TRIGger:A:VIDeo:STANdard {NTSc|PAL|SECAM} TRIGger:A:VIDeo:STANdard?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo?",
+      "syntax": "TRIGger:A:VIDeo?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A:VIDeo{:SYNC|:FIELD}",
+      "syntax": "TRIGger:A:VIDeo{:SYNC|:FIELD} {ODD|EVEN|ALLFields|ALLLines|NUMERic} TRIGger:A:VIDeo{:SYNC|:FIELD}?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A{:TRANsition|:RISEFall}:DELTatime",
+      "syntax": "TRIGger:A{:TRANsition|:RISEFall}:DELTatime <NR3> TRIGger:A{:TRANsition|:RISEFall}:DELTatime?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A{:TRANsition|:RISEFall}:POLarity",
+      "syntax": "TRIGger:A{:TRANsition|:RISEFall}:POLarity {EITher|NEGative|POSitive} TRIGger:A{:TRANsition|:RISEFall}:POLarity?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A{:TRANsition|:RISEFall}:SOUrce",
+      "syntax": "TRIGger:A{:TRANsition|:RISEFall}:SOUrce {CH1|CH2|CH3|CH4| D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|D10|D11|D12|D13|D14|D15} TRIGger:A{:TRANsition|:RISEFall}:SOUrce?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A{:TRANsition|:RISEFall}:WHEn",
+      "syntax": "TRIGger:A{:TRANsition|:RISEFall}:WHEn {SLOWer|FASTer|EQual|UNEQual} TRIGger:A{:TRANsition|:RISEFall}:WHEn?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:A{:TRANsition|:RISEFall}?",
+      "syntax": "TRIGger:A{:TRANsition|:RISEFall}?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:EXTernal:PRObe",
+      "syntax": "TRIGger:EXTernal:PRObe <NR3> TRIGger:EXTernal:PRObe?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:EXTernal:YUNIts?",
+      "syntax": "TRIGger:EXTernal:YUNIts?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:EXTernal?",
+      "syntax": "TRIGger:EXTernal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:FREQuency?",
+      "syntax": "TRIGger:FREQuency?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "TRIGger:STATE?",
+      "syntax": "TRIGger:STATE?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "UNLock",
+      "syntax": "UNLock ALL",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBDevice:CONFigure",
+      "syntax": "USBDevice:CONFigure {DISabled|IMAge|USBTmc} USBDevice:CONFigure?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC:PRODUCTID:DECimal?",
+      "syntax": "USBTMC:PRODUCTID:DECimal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC:PRODUCTID:HEXadecimal?",
+      "syntax": "USBTMC:PRODUCTID:HEXadecimal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC:SERIALnumber?",
+      "syntax": "USBTMC:SERIALnumber?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC:VENDORID:DECimal?",
+      "syntax": "USBTMC:VENDORID:DECimal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC:VENDORID:HEXadecimal?",
+      "syntax": "USBTMC:VENDORID:HEXadecimal?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "USBTMC?",
+      "syntax": "USBTMC?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "VERBose",
+      "syntax": "VERBose {OFF|ON|<NR1>}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WAVFrm?",
+      "syntax": "WAVFrm?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:BIT_Nr",
+      "syntax": "WFMInpre:BIT_Nr <NR1> WFMInpre:BIT_Nr?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:BN_Fmt",
+      "syntax": "WFMInpre:BN_Fmt {RI|RP} WFMInpre:BN_Fmt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:BYT_Nr",
+      "syntax": "WFMInpre:BYT_Nr <NR1> WFMInpre:BYT_Nr?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:BYT_Or",
+      "syntax": "WFMInpre:BYT_Or {LSB|MSB} WFMInpre:BYT_Or?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:COMPosition",
+      "syntax": "WFMInpre:COMPosition {COMPOSITE_YT|COMPOSITE_ENV|SINGULAR_YT} WFMInpre:COMPosition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:ENCdg",
+      "syntax": "WFMInpre:ENCdg {ASCii|BINary} WFMInpre:ENCdg?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:FILTERFreq",
+      "syntax": "WFMInpre:FILTERFreq {NR1} WFMInpre:FILTERFreq?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:NR_Pt",
+      "syntax": "WFMInpre:NR_Pt <NR1> WFMInpre:NR_Pt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:PT_Fmt",
+      "syntax": "WFMInpre:PT_Fmt {ENV|Y} WFMInpre:PT_Fmt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:PT_Off",
+      "syntax": "WFMInpre:PT_Off <NR1> WFMInpre:PT_Off?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:XINcr",
+      "syntax": "WFMInpre:XINcr <NR3> WFMInpre:XINcr?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:XUNit",
+      "syntax": "WFMInpre:XUNit <QString> WFMInpre:XUNit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:XZEro",
+      "syntax": "WFMInpre:XZEro <NR3> WFMInpre:XZEro?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:YMUlt",
+      "syntax": "WFMInpre:YMUlt <NR3> WFMInpre:YMUlt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:YOFf",
+      "syntax": "WFMInpre:YOFf <NR3> WFMInpre:YOFf?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:YUNit",
+      "syntax": "WFMInpre:YUNit <QString> WFMInpre:YUNit?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre:YZEro",
+      "syntax": "WFMInpre:YZEro <NR3> WFMInpre:YZEro?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMInpre?",
+      "syntax": "WFMInpre?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:BIT_Nr",
+      "syntax": "WFMOutpre:BIT_Nr <NR1> WFMOutpre:BIT_Nr?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:BN_Fmt",
+      "syntax": "WFMOutpre:BN_Fmt {RI|RP} WFMOutpre:BN_Fmt?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:BYT_Nr",
+      "syntax": "WFMOutpre:BYT_Nr <NR1> WFMOutpre:BYT_Nr?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:BYT_Or",
+      "syntax": "WFMOutpre:BYT_Or {LSB|MSB} WFMOutpre:BYT_Or?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:COMPosition",
+      "syntax": "WFMOutpre:COMPosition {COMPOSITE_YT|COMPOSITE_ENV|SINGULAR_YT} WFMOutpre:COMPosition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:ENCdg",
+      "syntax": "WFMOutpre:ENCdg {ASCii|BINary} WFMOutpre:ENCdg?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:FILTERFreq?",
+      "syntax": "WFMOutpre:FILTERFreq?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:NR_Pt?",
+      "syntax": "WFMOutpre:NR_Pt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:PT_Fmt?",
+      "syntax": "WFMOutpre:PT_Fmt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:PT_ORder?",
+      "syntax": "WFMOutpre:PT_ORder?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:PT_Off?",
+      "syntax": "WFMOutpre:PT_Off?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:RECOrdlength?",
+      "syntax": "WFMOutpre:RECOrdlength?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:WFId?",
+      "syntax": "WFMOutpre:WFId?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:XINcr?",
+      "syntax": "WFMOutpre:XINcr?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:XUNit?",
+      "syntax": "WFMOutpre:XUNit?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:XZEro?",
+      "syntax": "WFMOutpre:XZEro?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:YMUlt?",
+      "syntax": "WFMOutpre:YMUlt?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:YOFf?",
+      "syntax": "WFMOutpre:YOFf?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:YUNit?",
+      "syntax": "WFMOutpre:YUNit?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre:YZEro?",
+      "syntax": "WFMOutpre:YZEro?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "WFMOutpre?",
+      "syntax": "WFMOutpre?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:FACtor?",
+      "syntax": "ZOOm:ZOOM1:FACtor?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:HORizontal:POSition",
+      "syntax": "ZOOm:ZOOM1:HORizontal:POSition <NR3> ZOOm:ZOOM1:HORizontal:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:HORizontal:SCAle",
+      "syntax": "ZOOm:ZOOM1:HORizontal:SCAle <NR3> ZOOm:ZOOM1:HORizontal:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:POSition",
+      "syntax": "ZOOm:ZOOM1:POSition <NR3> ZOOm:ZOOM1:POSition?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:SCAle",
+      "syntax": "ZOOm:ZOOM1:SCAle <NR3> ZOOm:ZOOM1:SCAle?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1:STATE",
+      "syntax": "ZOOm:ZOOM1:STATE {ON|OFF|<NR1>} ZOOm:ZOOM1:STATE?",
+      "access": "set/get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm:ZOOM1?",
+      "syntax": "ZOOm:ZOOM1?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm?",
+      "syntax": "ZOOm?",
+      "access": "get",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    },
+    {
+      "command": "ZOOm{:MODe|:STATE}",
+      "syntax": "ZOOm{:MODe|:STATE} {ON|OFF|<NR1>} ZOOm{:MODe|:STATE}",
+      "access": "set",
+      "description": "Defined by the Tektronix MSO2000B/DPO2000 series programmer manual."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+connection supply type=serial
+    baud=9600 data_bits=8 parity=none stop_bits=1 match_usb_serial=PS-0017
+end
+connection meter type=serial
+    baud=115200 data_bits=8 parity=none stop_bits=1 match_usb_serial=METER-0004
+end
+
+discover supply
+discover meter
+send supply "VOLT 12.5" terminate=lf
+expect supply ends=lf save=supply_ack
+send meter "MEAS?" terminate=lf
+expect meter ends=lf save=measurement
+print "supply=${supply_ack} measurement=${measurement}"

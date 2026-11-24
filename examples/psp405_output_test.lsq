@@ -1,0 +1,14 @@
+device psp405 driver=psp405
+
+discover psp405
+open psp405
+
+device_call psp405 output_on
+device_call psp405 get_flags save=flags_on
+print "After output_on: ${flags_on}"
+
+device_call psp405 output_off
+device_call psp405 get_flags save=flags_off
+print "After output_off: ${flags_off}"
+
+close psp405

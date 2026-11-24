@@ -1,0 +1,11 @@
+# The PSP-405 connection and identification settings are defined by its driver.
+device psp405 driver=psp405
+discover psp405
+open psp405
+device_call psp405 status save=status
+print "PSP-405 status: ${status}"
+device_call psp405 get_voltage save=voltage
+print "output voltage: ${voltage} V"
+device_call psp405 get_current save=current
+print "output current: ${current} A"
+close psp405

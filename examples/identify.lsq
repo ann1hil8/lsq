@@ -1,0 +1,13 @@
+# Device identity is matched dynamically; COM numbers are not required.
+connection supply type=serial
+    baud=9600 data_bits=8 parity=none stop_bits=1 read_timeout=2s
+    match_vid=0x1234 match_pid=0x5678 match_usb_serial=PS-0017
+end
+
+device supply driver=generic connection=supply
+discover supply
+open supply
+send supply "*IDN?" terminate=lf
+expect supply ends=lf contains=E3634A save=idn
+print "identified: ${idn}"
+close supply

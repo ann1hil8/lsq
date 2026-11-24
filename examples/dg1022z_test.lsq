@@ -1,0 +1,31 @@
+# Non-destructive DG1022Z USB/VISA test.
+# The device driver supplies the VISA profile and discovers the USB resource.
+device dg1022 driver=dg1022z
+discover dg1022
+open dg1022
+
+device_call dg1022 identify save=idn
+print "IDN = ${idn}"
+
+device_call dg1022 get_function save=function
+print "CH1 function = ${function}"
+
+device_call dg1022 get_frequency save=ch1_frequency channel=1
+print "CH1 frequency = ${ch1_frequency} Hz"
+
+device_call dg1022 get_frequency save=ch2_frequency channel=2
+print "CH2 frequency = ${ch2_frequency} Hz"
+
+device_call dg1022 get_amplitude save=amplitude
+print "CH1 amplitude = ${amplitude} Vpp"
+
+device_call dg1022 get_output save=output
+print "CH1 output = ${output}"
+
+device_call dg1022 get_apply save=configuration
+print "CH1 configuration = ${configuration}"
+
+device_call dg1022 get_system_error save=error
+print "System error = ${error}"
+
+close dg1022

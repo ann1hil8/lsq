@@ -1,0 +1,75 @@
+# Alternating PSP-405 and DG1022Z integration test.
+# Both outputs are forced off before settings are changed.
+
+device psp405 driver=psp405
+device dg1022 driver=dg1022z
+
+discover psp405
+discover dg1022
+open psp405
+open dg1022
+
+# Clear stale instrument errors before the test begins.
+device_call dg1022 clear_status
+device_call psp405 output_off
+device_call dg1022 set_output false channel=1
+device_call dg1022 set_output false channel=2
+
+function configure_step psp_voltage psp_current psp_power dg_frequency dg_amplitude
+    # PSP-405 set/get sequence.
+    device_call psp405 set_voltage ${psp_voltage}
+    device_call psp405 get_voltage save=psp_voltage_readback
+    print "PSP voltage = ${psp_voltage_readback} V"
+
+    device_call psp405 set_current_limit ${psp_current}
+    device_call psp405 get_current_limit save=psp_current_readback
+    print "PSP current limit = ${psp_current_readback} A"
+
+    device_call psp405 set_power_limit ${psp_power}
+    device_call psp405 get_power_limit save=psp_power_readback
+    print "PSP power limit = ${psp_power_readback} W"
+
+    # DG1022Z set/get sequence.
+    device_call dg1022 set_function sine channel=1
+    device_call dg1022 set_frequency ${dg_frequency} channel=1
+    device_call dg1022 get_frequency save=dg_frequency_readback channel=1
+    print "DG CH1 frequency = ${dg_frequency_readback} Hz"
+
+    device_call dg1022 set_amplitude ${dg_amplitude} channel=1
+    device_call dg1022 get_amplitude save=dg_amplitude_readback channel=1
+    print "DG CH1 amplitude = ${dg_amplitude_readback} Vpp"
+
+    device_call dg1022 set_output false channel=1
+    device_call dg1022 get_output save=dg_output_readback channel=1
+    print "DG CH1 output = ${dg_output_readback}"
+endfunction
+
+function report_status
+    device_call psp405 get_status save=psp_status
+    print "PSP status = ${psp_status}"
+
+    device_call dg1022 get_function save=dg_function channel=1
+    device_call dg1022 get_apply save=dg_configuration channel=1
+    print "DG CH1 function = ${dg_function}"
+    print "DG CH1 configuration = ${dg_configuration}"
+
+    device_call dg1022 get_system_error save=dg_error
+    print "DG system error = ${dg_error}"
+endfunction
+
+print "Alternating integration test: step 1"
+call configure_step 5.00 1.00 17 1000 2.00
+call report_status
+
+print "Alternating integration test: step 2"
+call configure_step 6.00 1.00 20 3000 1.00
+call report_status
+
+repeat 2
+    print "Alternating readback loop"
+    call report_status
+    sleep 250ms
+endrepeat
+
+close psp405
+close dg1022
